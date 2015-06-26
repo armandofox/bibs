@@ -1,0 +1,19 @@
+\documentclass[10pt]{article}
+\usepackage{hyperref}
+\usepackage{databib}
+
+
+\begin{document}
+
+\nocite{*}
+
+% First argument is the name of new datatool database
+% Second argument is list of .bib files
+\DTLloadbbl{fox-databib}{fox}
+% Sort database in order of year starting from most recent
+\DTLsort{Year=descending}{fox-databib}
+
+
+\DTLbibliography{fox-databib}
+
+\end{document}
