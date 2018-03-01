@@ -290,23 +290,6 @@
   address =      {Seattle, WA}
 }
 
-@Unpublished{ponnekanti:amiba-nsdi,
-  author =       {Shankar R. Ponnekanti and Armando Fox},
-  title =        {{Trading Fidelity for Interoperability in Web Services}},
-  note =         {Submitted to {NSDI}},
-  year =         {2004}
-}
-
-@InProceedings{jacobs:bea,
-  author =       {Dean Jacobs},
-  title =        {Distributed Computing with {BEA} {WebLogic} Server},
-  booktitle =    {Proceedings of the Conference on Innovative Data
-                  Systems Research},
-  year =         {2003},
-  address =      {Asilomar, CA},
-  month =        Jan
-}
-
 
 @InProceedings{chen:pinpoint,
   author = {Mike Chen and Emre K\i{}c\i{}man and Eugene Fratkin and Eric Brewer
@@ -484,7 +467,7 @@
   address =      {Paris, France},
   month =        {May}
 }
-@InProceedings{asplos,
+@InProceedings{asplos-distillation,
   author =       {Armando Fox and Steven D. Gribble and Eric A. Brewer
                   and Elan Amir},
   title =        {Adapting to {N}etwork and {C}lient {V}ariability via
@@ -601,15 +584,6 @@
   year =         1998,
   month =        {Aug},
   note =         {Special issue on adapting to network and client variability}
-}
-
-@inproceedings{hotos7,
-  author =       {Armando Fox and Eric A. Brewer},
-  title =        {Harvest, Yield, and Scalable Tolerant Systems},
-  booktitle = hotos7,
- address = {Rio Rico, AZ},
-  month =        {March},
-  year =         1999
 }
 
 @PhdThesis{fox_thesis,
@@ -733,7 +707,7 @@ An Enabling Infrastructure for Interactive Workspaces},
   title = {The Case for a Session State Storage Layer},
   booktitle = HOTOS9, address = AHOTOS9, year = YHOTOS9, month = Jun
 }
-@InProceedings{ling:ssm,
+@InProceedings{ling:ssm-nsdi,
   author =       {Benjamin Ling and Emre K\i{}c\i{}man and Armando Fox},
   title =        {Session State: Beyond Soft State},
   booktitle =    Proc # {1st Symposium on Networked Systems Design and Implementation (NDSI'04)},
@@ -756,15 +730,6 @@ An Enabling Infrastructure for Interactive Workspaces},
   year =         2002,
   address = {Callicoon, NY},
   month = {June}
-}
-
-@InProceedings{interop-percom,
-  author =       {Shankar R. Ponnekanti and Armando Fox},
-  title =        {{Application Service Interoperation without Standardized Interfaces}},
-  booktitle =    {IEEE Percom '03},
-  year =         2003,
-  address = {Dallas-Fort Worth, TX},
-  month = {March}
 }
 
 
@@ -800,13 +765,6 @@ An Enabling Infrastructure for Interactive Workspaces},
   title = {Using Runtime Paths for Macro Analysis},
   booktitle = HOTOS9, address = AHOTOS9, year = YHOTOS9 }
 
-@BOOKLET{bigsf:2003,
-title="The Black {F}riday Report on {W}eb Application Integrity",
-author={{Business Internet Group}},
-address={San Francisco, CA},
-year=2003
-}
-
 @InProceedings{eheapwmcsa,
   author =       {Brad Johanson and Armando Fox},
   title =        {{The Event Heap: A Coordination Infrastructure For Interactive Workspaces}},
@@ -815,17 +773,6 @@ year=2003
   address = {Callicoon, NY},
   month = {June}
 }
-
-@article{linda85,
-  author =      {David Gelernter},
-  title =       {{Generative communication in LINDA}},
-  journal =     {ACM Transactions on Programming Languages and Systems},
-  month =       {January},
-  year =        {1985},
-  pages =       {80--112}
-}
-
-
 
 @Article{eheap-jss,
   author =       {Brad Johanson and Armando Fox},
@@ -866,18 +813,8 @@ year=2003
   title     = {Interoperability among Independently Evolving Web Services},
   booktitle = {ACM/Usenix/IFIP Middleware'04},
   year      = {2004},
-  note      = {\url{http://swig.stanford.edu/~pshankar/mw.pdf}},
+  url      = {http://swig.stanford.edu/~pshankar/mw.pdf},
 }
-
-@InProceedings{ssm-nsdi,
-  author =       {Benjamin C. Ling and Emre K\i{}c\i{}man and Armando Fox},
-  title =        {Session State: Beyond Soft State},
-  booktitle =    {Proc. 1st USENIX/ACM Symposium on Networked Systems Design and Implementation},
-  year =         2004,
-  address =      {San Francisco, CA},
-  month =        {March}
-}
-
 
 @Article{kiciman:detecting,
   author =       {Emre K\i{}c\i{}man and Armando Fox},
@@ -1186,6 +1123,17 @@ Terence Kelly and Julie Symons and Armando Fox},
 %%  SEJITS
 %%                  
 
+@techreport{Patil:EECS-2017-115,
+    Author = {Patil, Mihir},
+    Editor = {Fox, Armando and Markley, Charles},
+    Title = {SKYE: Motion Detection and Tracking with SEJITS},
+    Institution = {EECS Department, University of California, Berkeley},
+    Year = {2017},
+    Month = {Jun},
+    URL = {http://www2.eecs.berkeley.edu/Pubs/TechRpts/2017/EECS-2017-115.html},
+    Number = {UCB/EECS-2017-115},
+    Abstract = {Optimized libraries with callables in Python are very popular for scientific development. They provide an accessible interface, complemented with strong performance. However, there are often operations that these specialized libraries do not support, but are nevertheless necessary in custom applications. This presents a problem, since these unsupported operations are often implemented in Python by the application designer, and therefore are usually unoptimized. Applications that mandate significant performance cannot be effective when they also require these unsupported operations. This performance gap can be greatly reduced with selective embedded just-in-time specialization, or SEJITS. Instead of writing simple Python code for the custom operations, SEJITS allows users to write an optimized version of the routine that can be called in Python. The JIT-specialized code drastically improves performance of the custom routine, allowing the overall computing pipeline for the application to witness a significant speedup. This report explores SKYE, an application that uses OpenCV and a custom SEJITS-optimized method to perform motion detection and tracking.}
+}
                   
 
 @InProceedings{sejits-scipy2011,
@@ -1212,6 +1160,21 @@ Selective Embedded {JIT} Specialization},
   year =      2009,
   address =   {Raleigh, NC},
   month =     {October}}
+                  
+                  
+
+@InProceedings{snowflake-hips,
+  author =       {Nathan Zhang and Michael Driscoll and Charles Markley and Samuel Williams and Protonu Basu and Armando Fox and Katherin Yelick},
+  title =        {Snowflake: A Lightweight Portable Stencil {DSL}},
+  booktitle =  {22nd International Workshop on High-Level Parallel Programming Models and Supportive Environments (HIPS 2017)},
+  year =      2017,
+  month =     {May},
+  address =   {Orlando, FL}}
+
+%
+% applying machine learning to datacenters/cloud computing
+%
+
 
 @InProceedings{bodik:spike:socc10,
   author =       {Peter Bodik and Armando Fox and Michael Franklin and Michael Jordan and David Patterson},
@@ -1297,6 +1260,41 @@ url = {http://www.eecs.berkeley.edu/Pubs/TechRpts/2012/EECS-2012-61.html}
     PUBLISHER = {{IEEE} {C}omputer {S}ociety},
     YEAR = {2013} }
 
+@techreport{Spillinger:EECS-2015-29,
+    Author = {Spillinger, Omer and Eliahu, David and Fox, Armando and Demmel, James},
+    Title = {Matrix Multiplication Algorithm Selection with Support Vector Machines},
+    School = {EECS Department, University of California, Berkeley},
+    Year = {2015},
+    Month = {May},
+    URL = {http://www.eecs.berkeley.edu/Pubs/TechRpts/2015/EECS-2015-29.html},
+    Number = {UCB/EECS-2015-29},
+    Abstract = {We present a machine learning technique for the algorithm selection problem, specifically focusing on algorithms for dense matrix multiplication. Dense matrix multiplication is a core component of many high-performance computing and machine learning algorithms, but the performance of matrix multiplication algorithms can vary significantly based on input parameters and hardware architecture. We build performance models for multiple machines using support vector machines (SVMs) and show that only a sparse exploration of the input space is sufficient to accurately predict the best choice of algorithm over a wide range of possible inputs. We find that by using this classifier-based approach to choose the best algorithm to use at runtime, we are able to achieve as much as a 26% increase in average performance over choosing a single algorithm a priori. This is within 1.5% of the performance possible with a perfect algorithm selector.}
+}
+                  
+
+
+@techreport{Eliahu:EECS-2015-28,
+    Author = {Eliahu, David and Spillinger, Omer and Fox, Armando and Demmel, James},
+    Title = {FRPA: A Framework for Recursive Parallel Algorithms},
+    School = {EECS Department, University of California, Berkeley},
+    Year = {2015},
+    Month = {May},
+    URL = {http://www.eecs.berkeley.edu/Pubs/TechRpts/2015/EECS-2015-28.html},
+    Number = {UCB/EECS-2015-28},
+    Abstract = {Recursion continues to play an important role in high-performance computing. However, parallelizing recursive algorithms while achieving high performance is nontrivial and can result in complex, hard-to-maintain code. In particular, assigning processors to subproblems is complicated by recent observations that communication costs often dominate computation costs. Previous work demonstrates that carefully choosing which divide-and-conquer steps to execute in parallel (breadth-first steps) and which to execute sequentially (depth-first steps) can result in significant performance gains over naive scheduling. Our Framework for Recursive Parallel Algorithms (FRPA) allows for the separation of an algorithm's implementation from its parallelization. The programmer must simply define how to split a problem, solve the base case, and merge solved subproblems; FRPA handles parallelizing the code and tuning the recursive parallelization strategy, enabling algorithms to achieve high performance. To demonstrate FRPA's performance capabilities, we present a detailed analysis of two algorithms: Strassen-Winograd and Communication-Optimal Parallel Recursive Rectangular Matrix Multiplication (CARMA). Our single-precision CARMA implementation is fewer than 80 lines of code and achieves a speedup of up to 11X over Intel's Math Kernel Library (MKL) matrix multiplication routine on "skinny" matrices. Our double-precision Strassen-Winograd implementation, at just 150 lines of code, is up to 45% faster than MKL for large square matrix multiplications. To show FRPA's generality and simplicity, we implement six additional algorithms: mergesort, quicksort, TRSM, SYRK, Cholesky decomposition, and Delaunay triangulation. FRPA is implemented in C++, runs in shared-memory environments, uses Intel's Cilk Plus for task-based parallelism, and leverages OpenTuner to tune the parallelization strategy.}
+}
+
+@techreport{Stephens:EECS-2013-141,
+    Author = {Stephens, Kristin},
+    Title = {Towards Sound HTTP Request Causation Inference},
+    School = {EECS Department, University of California, Berkeley},
+    Year = {2013},
+    Month = {Aug},
+    URL = {http://www.eecs.berkeley.edu/Pubs/TechRpts/2013/EECS-2013-141.html},
+    Number = {UCB/EECS-2013-141},
+    Abstract = {Network traces are a useful tool in understanding how users navigate the web.
+Knowing the sequence of pages that led a user to arrive at a malicious website can help researchers develop techniques to prevent users from reaching such sites. Nevertheless, inferring sound causation between HTTP requests is a challenging task. Previous work often inferred these relationships without proper calibration. We present here methods for and considerations when inferring causation relationships between HTTP requests. We also introduce causation trees and terminology needed to model causal relationships between HTTP requests. Finally, we describe Gretel, our system that infers causation relationships, how we calibrated it, and our results on a sample control data set where ground truth was available.}
+}
 
 
 @techreport{carma:Demmel:EECS-2012-205,
@@ -1310,7 +1308,15 @@ url = {http://www.eecs.berkeley.edu/Pubs/TechRpts/2012/EECS-2012-61.html}
     Abstract = {Communication-optimal algorithms are known for square matrix multiplication. Here, we obtain the first communication-optimal algorithm for all dimensions of rectan- gular matrices. Combining the dimension-splitting technique of Frigo, Leiserson, Prokop and Ramachandran (1999) with the recursive BFS/DFS approach of Ballard, Demmel, Holtz, Lipshitz and Schwartz (2012) allows for a communication-optimal as well as cache- and network-oblivious algorithm. Moreover, the implementation is simple: approximately 50 lines of code for the shared-memory version. Since the new algorithm minimizes communication across the network, between NUMA domains, and between levels of cache, it performs well in practice on both shared- and distributed-memory machines. We show significant speedups over existing parallel linear algebra libraries both on a 32-core shared-memory machine and on a distributed-memory supercomputer.}
 }
 
-
+@inproceedings{sejits-kdt,
+  author = {Bulu\c{c}, Ayd{\i}n and Duriakova, Erika and Fox, Armando and Gilbert, John and Kamil, Shoaib and Lugowski, Adam and Oliker, Leonid and Williams, Samuel},
+  title = {High-Productivity and High-Performance Analysis of Filtered Semantic Graphs},
+  booktitle = {Proceedings of the IPDPS},
+  year = {2013},
+  publisher = {IEEE Computer Society},
+  url = {http://gauss.cs.ucsb.edu/~aydin/ipdps13-kdtsejits.pdf},
+  doi = {10.1109/IPDPS.2013.52}
+}
 @article{sejits-graph-jpdc,
   title={Parallel processing of filtered queries in attributed semantic graphs},
   author={Lugowski, Adam and Kamil, Shoaib and Bulu{\c{c}}, Ayd{\i}n and Williams, Samuel and Duriakova, Erika and Oliker, Leonid and Fox, Armando and Gilbert, John R},
@@ -1321,15 +1327,27 @@ url = {http://www.eecs.berkeley.edu/Pubs/TechRpts/2012/EECS-2012-61.html}
   publisher={Elsevier}
 }
 
-@inproceedings{sejits-kdt,
-  author =    {Aydin Bulu\c{c} and Erika Duriakova and Armando Fox and John R. Gilbert and Shoaib Kamil and Adam Lugowski and Leonid Oliker and Samuel W. Williams},
-  title =     {High-Productivity and High-Performance Analysis of Filtered Semantic Graphs},
-  BOOKTITLE = {Proceedings of the 25th {IEEE} {I}nternational {P}arallel
-                 and {D}istributed {P}rocessing {S}ymposium (IPDPS'13)},
-    month = {May}, 
-    address = {Boston, {MA}},
-    PUBLISHER = {{IEEE} {C}omputer {S}ociety},
-    YEAR = 2013 }
+@inproceedings{truong:latte,
+  author    = {Leonard Truong and
+               Rajkishore Barik and
+               Ehsan Totoni and
+               Hai Liu and
+               Chick Markley and
+               Armando Fox and
+               Tatiana Shpeisman},
+  title     = {Latte: a language, compiler, and runtime for elegant and efficient
+               deep neural networks},
+  booktitle = {Proceedings of the 37th {ACM} {SIGPLAN} Conference on Programming
+               Language Design and Implementation, {PLDI} 2016, Santa Barbara, CA,
+               USA, June 13-17, 2016},
+  pages     = {209--223},
+  year      = 2016,
+  url       = {http://doi.acm.org/10.1145/2908080.2908105},
+  doi       = {10.1145/2908080.2908105},
+  timestamp = {Mon, 06 Jun 2016 12:11:24 +0200},
+  biburl    = {http://dblp.org/rec/bib/conf/pldi/TruongBTLMFS16},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
 
 
 @inproceedings{birsinger-blb-cloud,
@@ -1369,6 +1387,25 @@ year = 2012
   annote =    {Edited by Samuel Joseph.  Also available in Spanish, Brazilian Portuguese, and Chinese.} 
 }
 
+@article{diy-textbook-publishing,
+ author = {Fox, Armando and Patterson, David},
+ title = {Do-it-yourself Textbook Publishing},
+ journal = {Commun. ACM},
+ issue_date = {February 2015},
+ volume = 58,
+ number = 2,
+ month = Feb,
+ year = 2015,
+ issn = {0001-0782},
+ pages = {40--43},
+ numpages = 4,
+ url = {http://doi.acm.org/10.1145/2656333},
+ doi = {10.1145/2656333},
+ acmid = 2656333,
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}                   
+                  
 @Article{crossing_the_software_chasm,
   author =       {Armando Fox and David Patterson},
   title =        {Crossing the Software Education Chasm},
@@ -1376,6 +1413,7 @@ year = 2012
   year =         2012,
   volume =    55,
   number =    5,
+  annote = {As of January 2015, \#1 downloaded CACM Viewpoint article since January 2012, with over 242,000 downloads, more than twice as many as the \#2 or \#3 article and more than four times as many as any other "top 10" Viewpoint download.  As of October 2017, \#5 most downloaded CACM article of any kind according to CACM website.},
   pages =     {25--30},
   month =     {May}}
                   
@@ -1385,7 +1423,12 @@ year = 2012
   title =       {Is the new software engineering curriculum agile?},
   author =        {Armando Fox and David A. Patterson},
   journal =      {{IEEE} Software},
+  volume = 30,
+  number = 5,
+  pages = {84--88},
   year =         2013,
+  url = {http://www.computer.org/csdl/mags/so/2013/05/mso2013050088-abs.html},
+  doi = {http://doi.ieeecomputersociety.org/10.1109/MS.2013.109},
   month =     {September/October}}
 
                   
@@ -1396,7 +1439,8 @@ year = 2012
   journal =      {Communications of the {ACM}},
   year =         2013,
   url = {http://cacm.acm.org/magazines/2013/12/169931-from-moocs-to-spocs/abstract},
-  month = 12,
+  annote = {As of January 2015, \#6 downloaded CACM Viewpoint article since January 2012, with over 44,000 downloads.},
+  month = Dec,
   volume = 56
 }
                   
@@ -1498,34 +1542,6 @@ year = 2012
   month =     {March},
   address =   {Vancouver, BC, Canada}}
 
-
-
-
-%%% Proceedings of conferences for which i've been chair or co-chair
-
-
-
-@Proceedings{las2014,
- title = {L@S '14: Proceedings of the First ACM Conference on Learning @ Scale Conference},
- year = 2014,
- isbn = {978-1-4503-2669-8},
- location = {Atlanta, Georgia, USA},
- publisher = {ACM},
- address = {New York, NY, USA},
-  editor =    {Armando Fox and Marti A. Hearst and Michelene Chi},
-  month =     {March}}
-}                   
-
-
-@Proceedings{hotos09,
-  title =        {{H}ot{OS}-{IX}: 9th {USENIX} Workshop on Hot Topics in Operating Systems},
-  year =         2009,
-  editor =    {Armando Fox},
-  location = {Lihue, HI},
-  address =   {Berkeley, CA},
-  month =     {May},
-  publisher = {Usenix}}
-
 @InProceedings{clustering-style,
   author =       {HeZheng Yin and Armando Fox},
   title =        {Clustering Student Programming Assignments to Multiply Instructor Leverage},
@@ -1546,3 +1562,175 @@ year = 2012
  note = {Short paper},
  url = {http://dx.doi.org/10.1145/2724660.2728672}}
 
+@InProceedings{rag-autograder,
+  author =       {Armando Fox and David Patterson and Samuel Joseph and Paul McCulloch},
+  title =        {{MAGIC}: Massive Automated Grading in the Cloud},
+  booktitle = {{CHANGEE} (Facing the challenges of assessing 21st century skills in the newly emerging educational ecosystem) workshop at {EC-TEL} 2015},
+  year =      2015,
+  month =     {September},
+  address =   {Toledo, Spain}}
+
+
+
+@InProceedings{autostyle-lwmoocs16,
+  author =       {Antares Chen and Eliane Wiese and HeZheng Yin and Rohan Choudhury and Armando Fox},
+  title =        {Preliminary evidence for learning good coding style with Autostyle},
+  booktitle = {Third Symposium on Learning With {MOOCs} ({LWMOOC III})},
+  year =      2016,
+  month =     {October},
+  address =   {Philadelphia, PA}}
+
+@InProceedings{autostyle-its2016,
+  author =       {Rohan Roy Choudhury and HeZheng Yin and Armando Fox},
+  title =        {Scale-Driven Automatic Hint Generation for Coding Style},
+  booktitle = {13th International Conference on Intelligent Tutoring Systems ({ITS} 2016)},
+  year =      2016,
+  month =     {June},
+  address =   {Zagreb, Croatia}}
+
+@InCollection{autostyle-its2016-bookchapter,
+  author =       {Rohan Roy Choudhury and HeZheng Yin and Armando Fox},
+  title =        {Scale-Driven Automatic Hint Generation for Coding Style},
+  booktitle =    {Intelligent Tutoring Systems},
+  publisher = {Springer},
+  isbn = {ISBN 978-3-319-39583-8},
+  year =      2016,
+  editor =    {Alessandro Micarelli and John Stamper and Kitty Panourgia}}
+
+@InProceedings{autostyle-las2017,
+  title =       {Teaching Students to Recognize and Implement Good Coding Style},
+  author =        {Eliane S. Wiese and Michael Yen and Antares Chen and Lucas A. Santos and Armando Fox},
+  booktitle = {L@S 2017: Proceedings of the Fourth {ACM} Conference on Learning at Scale},
+  year =      2017,
+  month =     {April},
+   note = {Accept rate 14\%},
+  address =   {Cambridge, MA}}
+
+%%% Proceedings of conferences for which i've been chair or co-chair
+
+
+                  
+%% Teamscope
+
+
+
+@InProceedings{teamscope-las2017-wip,
+  author =       {An Ju and Elena Glassman and Armando Fox},
+  title =        {Teamscope: Scalable Team Evaluation via Automated Metric Mining for Communication, Organization, Execution, and Evolution}, 
+  url = {http://dx.doi.org/10.1145/3051457.3053997},
+  booktitle = {Fourth {ACM} Conference on Learning at Scale},
+  year =      2017,
+  month =     {April},
+  address =   {Cambridge, MA},
+  abstract = {Teaching software development teams can be difficult to scale. Based on various cloud-based software development tools, Teamscope provides automated or semi-automated metrics to improve the scalability of a course with team projects. Metrics developed in Teamscope provide a synthesized view of a student team. Our preliminary results have shown the validity of these metrics. We also present a case study of applying metrics to teaching software development course in this paper.},
+  note =      {Work-in-progress}}
+
+@InCollection{mooc-moment-uchicago,
+  author =       {Armando Fox},
+  title =        {Can {MOOCs} and {SPOCs} Help Scale Residential Education While Maintaining High Quality?},
+  booktitle =    {{MOOCs} and Their Afterlives},
+  url = {http://press.uchicago.edu/ucp/books/book/chicago/M/bo26175939.html},
+  publisher = {University of Chicago Press},
+  year =      2016,
+  editor =    {Elizabeth Losh},
+  address =   {Chicago, IL},
+  abstract = {
+While early discussions around the pros and cons of MOOCs have been
+spirited, often overlooked in such discussions are how MOOCs can enhance
+rather than replace classroom teaching.  Experience with an early and
+highly-successful software engineering MOOC led to coining the term
+SPOC, for Small Private Online Course, to describe the more intimate
+experience resulting from the careful customization and adaptation of
+MOOC-tested materials for classroom use.  The result is that the campus
+course on which the MOOC was based has quadrupled its enrollment while
+maintaining high student evaluations and has allowed teaching assistants
+to spend more of their time advising open-ended student projects, which
+are key to the course's learning objectives.  Further, a growing
+community of classroom instructors at other universities has adapted the
+same MOOC materials in a wide variety of pedagogies, dispelling the myth
+that MOOCs threaten to impose homogeneity that de-professionalizes
+instructors and devalues their creativity.  On the contrary, this SPOC
+community now regularly contributes new course materials to the MOOC and
+enhances existing ones, to the benefit of all.  Notwithstanding, 
+structural and cultural institutional obstacles pose some challenges to
+widespread emulation of this successful strategy.}
+}
+
+
+
+@InProceedings{tags-icer2017,
+  author =       {Kristin Stephens-Martinez and An Ju and Krishna Parashar and Regina Ongowarsito and Nikunj Jain and Sreesha Venkat and Armando Fox},
+  title =        {Taking advantage of scale by analyzing frequent constructed-response, code tracing wrong answers},
+  booktitle = {13th International Computing Education Research Conference ({ICER} 2017)},
+  year =      2017,
+  address =   {Tacoma, WA},
+  note =      {27\% accept rate (29/108)}}
+
+@Proceedings{las2014,
+ title = {L@S 2014: Proceedings of the First ACM Conference on Learning at Scale },
+ year = 2014,
+ isbn = {978-1-4503-2669-8},
+ location = {Atlanta, Georgia, USA},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+  editor =    {Armando Fox and Marti A. Hearst and Michelene Chi},
+  month =     {March}}
+}                   
+
+
+@Proceedings{hotos09,
+  title =        {{H}ot{OS}-{IX}: 9th {USENIX} Workshop on Hot Topics in Operating Systems},
+  year =         2009,
+  editor =    {Armando Fox},
+  location = {Lihue, HI},
+  address =   {Berkeley, CA},
+  month =     {May},
+  publisher = {Usenix}}
+
+%% Patents
+
+
+@article{patent-eventheap,
+	Address = {US},
+	Author = {JOHANSON BRADLEY E and FOX ARMANDO and WINOGRAD TERRY A and HANRAHAN PATRICK M},
+	C1 = {2004/04/08},
+	C2 = {2010/04/20},
+	Da = {2004/04/08},
+	Date-Added = {2015-09-27 22:29:58 +0000},
+	Date-Modified = {2015-09-27 22:29:58 +0000},
+	Isbn = {US 7702729 B2},
+	M1 = {US 82175604 A},
+	M3 = {B2},
+	Op = {US 82175604 A 20040408; US 46152003 P 20030408},
+	Publisher = {JOHANSON BRADLEY E},
+	Publisher1 = {FOX ARMANDO},
+	Publisher2 = {WINOGRAD TERRY A},
+	Publisher3 = {HANRAHAN PATRICK M},
+	Title = {Event heap: a coordination infrastructure for dynamic heterogeneous application interactions in ubiquitous computing environments},
+	Ty = {PAT},
+	Url = {https://www.lens.org/lens/patent/US_7702729_B2},
+	Year = {2010},
+	Bdsk-Url-1 = {https://www.lens.org/lens/patent/US_7702729_B2}}
+
+
+@article{patent-channelmanager,
+	Address = {US},
+	Author = {JOHANSON BRADLEY E and MILNE ANDREW J and EGGERS MICHAEL and FOX ARMANDO},
+	C1 = {2010/10/12},
+	C2 = {2015/04/30},
+	Da = {2010/10/12},
+	Date-Added = {2015-09-27 22:30:41 +0000},
+	Date-Modified = {2015-09-27 22:30:41 +0000},
+	Isbn = {US 2015 0121249 A9 20150430},
+	M1 = {US 92503210 A},
+	M3 = {A9},
+	Op = {US 39055406 A 20060324; US 66528105 P 20050325},
+	Publisher = {JOHANSON BRADLEY E},
+	Publisher1 = {MILNE ANDREW J},
+	Publisher2 = {EGGERS MICHAEL},
+	Publisher3 = {FOX ARMANDO},
+	Title = {Heterogenous content channel manager for ubiquitous computer software systems},
+	Ty = {PAT},
+	Url = {https://www.lens.org/lens/patent/US_2015_0121249_A9_20150430},
+	Year = {2015},
+	Bdsk-Url-1 = {https://www.lens.org/lens/patent/US_2015_0121249_A9_20150430}}
