@@ -1,19 +1,27 @@
+TEX = pdflatex
+BIB = bibtex8 --wolfgang
+
 all: cite.pdf
 
 clean:
-	rm -f cite.{aux,pdf,dvi,log,out,bbl,blg}
+	rm -f *.{aux,pdf,dvi,log,out,bbl,blg,bcf,run.xml}
 	rm -f databib.bst
 
+cite-by-section.pdf: cite-by-section.tex fox.bib
+	$(TEX) cite-by-section
+	$(BIB) cite-by-section
+	$(TEX) cite-by-section
+
 cite.pdf: cite.tex
-	pdflatex cite
+	$(TEX) cite
 	bibtex cite
-	pdflatex cite
-	pdflatex cite
+	$(TEX) cite
+	$(TEX) cite
 cite2.pdf: cite2.tex
-	pdflatex cite2
+	$(TEX) cite2
 	bibtex cite2
-	pdflatex cite2
-	pdflatex cite2
+	$(TEX) cite2
+	$(TEX) cite2
 
 # #!/bin/bash
 # for file in *.aux ; do

@@ -1,0 +1,12 @@
+\documentclass[10pt]{article}
+\usepackage[sorting=ydnt,backend=bibtex8]{biblatex}
+\addbibresource{fox.bib}
+
+\begin{document}
+
+\nocite{*}
+
+\printbibliography[type=inproceedings,title={Refereed Conference Papers}]
+\printbibliography[type=article,title={Journal Articles}]
+
+\end{document}
