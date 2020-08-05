@@ -1,10 +1,20 @@
-\documentclass[10pt,fullpage]{article}
-\usepackage[sorting=ynt,defernumbers=true,backend=bibtex8]{biblatex}
+\documentclass[10pt]{article}
+\usepackage{fullpage}[empty,0.75in] % remove "empty" to include page numbers
+\usepackage[maxbibnames=99,sorting=ynt,defernumbers=true,backend=bibtex8]{biblatex}
 \addbibresource{fox.bib}
 
 %\input{custom_bib_categories}
 
 \begin{document}
+\pagestyle{empty}\thispagestyle{empty}
+
+\begin{center}{\huge Armando Fox Complete Publications List}
+\end{center}
+\vspace{0.5in}
+
+\noindent\textbf{Note:} This list does not include invited keynote presentations, of which there are many,
+even when the presentation was accompanied by an abstract in the corresponding proceedings.
+Those are all entered in APBears under Professional Activities.
 
 \nocite{*}
 
@@ -12,7 +22,7 @@
 
 % refereed/archival Journal @article entries.  make sure your bibtex entries for these
 % do NOT include the keyword "nonref" in the "keywords" field
-\printbibliography[type=article,notkeyword=nonref,title={Journal Articles}]
+\printbibliography[type=article,notkeyword=nonref,title={Refereed Journal Articles}]
 
 % refereed conference proceedings/papers: all @inproceedings
 \printbibliography[type=inproceedings,title={Refereed Conference Proceedings}]
