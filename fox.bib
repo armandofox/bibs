@@ -982,11 +982,55 @@ Terence Kelly and Julie Symons and Armando Fox},
   address =   {Berkeley, CA},
   month =     3}
 
+@techreport{Chen:EECS-2010-6,
+    Author = {Chen, Yanpei and Ganapathi, Archana Sulochana and Fox, Armando and Katz, Randy H. and Patterson, David A.},
+    Title = {Statistical Workloads for Energy Efficient MapReduce},
+    Institution = {EECS Department, University of California, Berkeley},
+    Year = {2010},
+    Month = {1},
+    URL = {http://www2.eecs.berkeley.edu/Pubs/TechRpts/2010/EECS-2010-6.html},
+    Number = {UCB/EECS-2010-6},
+    Abstract = {Energy efficiency is a growing concern in modern datacenters. As Internet services increasingly rely on MapReduce workloads to fuel their flagship businesses, there is a growing need for better MapReduce energy efficency evaluation mechanisms. We present a statistics-driven workload generation framework that distills summary statistics from production MapReduce traces and realistically reproduces representative workloads. These workloads help us evaluate design decisions with regard to scale, configuration, scheduling, and other issues. We use this framework to identify specific suggestions to improve MapReduce energy efficiency. Our key finding is that evaluations using trace-driven workloads reverse current design priorities in optimizing for data intensive synthetic jobs.}
+}
+
+@techreport{Ganapathi:EECS-2009-160,
+    Author = {Ganapathi, Archana Sulochana and Chen, Yanpei and Fox, Armando and Katz, Randy H. and Patterson, David A.},
+    Title = {Statistics-Driven Workload Modeling for the Cloud},
+    Institution = {EECS Department, University of California, Berkeley},
+    Year = {2009},
+    Month = {11},
+    URL = {http://www2.eecs.berkeley.edu/Pubs/TechRpts/2009/EECS-2009-160.html},
+    Number = {UCB/EECS-2009-160},
+    Abstract = {A recent trend for data-intensive computations is to use pay-as-you-go execution environments that scale transparently to the user. However, providers of such environments must tackle the challenge of configuring their system to provide maximal performance while minimizing the cost of resources used. In this paper, we use statistical models to predict resource requirements for Cloud computing applications. Such a prediction framework can guide system design and deployment decisions such as scale, scheduling, and capacity. In addition, we present initial design of a workload generator that can be used to evaluate alternative configurations without the overhead of reproducing a real workload. This paper focuses on statistical modeling and its application to data-intensive workloads.}
+}
+
+
 
 %%
 %%  SCADS/PIQL
 %%                  
 
+@techreport{Trutna:EECS-2010-30,
+    Author = {Trutna, Jesse and Patterson, David A. and Fox, Armando},
+    Title = {Nye's Trie and Floret Estimators: Techniques for Detecting and Repairing Divergence in the SCADS Distributed Storage Toolkit},
+    Institution = {EECS Department, University of California, Berkeley},
+    Year = 2010,
+    Month = {3},
+    URL = {http://www2.eecs.berkeley.edu/Pubs/TechRpts/2010/EECS-2010-30.html},
+    Number = {UCB/EECS-2010-30},
+    Abstract = {We present two novel data structures developed in the SCADS distributed storage toolkit for synchronizing replicated datasets with predictable performance: Nye's trie is a lightweight index for ordered key-value sets that supports synchronization with time and bandwidth utilization proportional to the number of diverging entries. While efficient, this process is only predictable if the number of divergent entries can be measured. For this, we introduce the floret estimator, a novel sublinear-space set summarization structure used to estimate the cardinalities of set difference, union, and intersection operations. We describe how these structures satisfy the design requirements of the SCADS system, detail their design and implementation, and present a set of microbenchmarks demonstrating their functionality.}
+}
+
+@techreport{Armbrust:EECS-2010-8,
+    Author = {Armbrust, Michael and Lanham, Nick and Tu, Stephen and Fox, Armando and Franklin, Michael and Patterson, David A.},
+    Title = {PIQL: A Performance Insightful Query Language For Interactive Applications},
+    Institution = {EECS Department, University of California, Berkeley},
+    Year = {2010},
+    Month = {1},
+    URL = {http://www2.eecs.berkeley.edu/Pubs/TechRpts/2010/EECS-2010-8.html},
+    Number = {UCB/EECS-2010-8},
+    Abstract = {Large-scale, user-facing applications are increasingly moving from relational databases to distributed key-value stores for high request rate, low latency workloads. Often this move is motivated not only by key/value stores’ ability to scale simply by adding more hardware, but also by the easy to understand predictable performance they provide for all operations. For complex queries this approach often requires onerous explicit index management and imperative data lookup by the developer. We propose PIQL, a Performance Insightful Query Language that allows developers to express many of the queries found on these websites, while still providing strict performance guarantees.}
+}                  
 
 @inproceedings{piql-vldb,
   author =       {Michael Armbrust and Kristal Curtis and Tim Kraska and Armando Fox and Michael J. Franklin and David A. Patterson },
@@ -1041,6 +1085,15 @@ Terence Kelly and Julie Symons and Armando Fox},
 %% 
 %%  AMP lab - crowdsourcing, genomics etc
 %%
+@techreport{Haussler:EECS-2012-211,
+    Author = {Haussler, David and Patterson, David A. and Diekhans, Mark and Fox, Armando and Jordan, Michael and Joseph, Anthony D. and Ma, Singer and Paten, Benedict and Shenker, Scott and Sittler, Taylor and Stoica, Ion},
+    Title = {A Million Cancer Genome Warehouse},
+    Institution = {EECS Department, University of California, Berkeley},
+    Year = {2012},
+    Month = {11},
+    URL = {http://www2.eecs.berkeley.edu/Pubs/TechRpts/2012/EECS-2012-211.html},
+    Number = {UCB/EECS-2012-211}}
+    
 @inproceedings{kandasamy:crowd,
   author    = {Durga M. Kandasamy and
                Kristal Curtis and
@@ -1096,7 +1149,15 @@ Terence Kelly and Julie Symons and Armando Fox},
   address =   {Big Sky, Montana},
   month =     10}
                   
-
+@techreport{Xu:EECS-2009-103,
+    Author = {Xu, Wei and Huang, Ling and Fox, Armando and Patterson, David A. and Jordan, Michael},
+    Title = {Large-Scale System Problems Detection by Mining Console Logs},
+    Institution = {EECS Department, University of California, Berkeley},
+    Year = 2009,
+    Month = {7},
+    URL = {http://www2.eecs.berkeley.edu/Pubs/TechRpts/2009/EECS-2009-103.html},
+    Number = {UCB/EECS-2009-103}
+    }
 
 @inproceedings{xu:slaml10,
   author =       {Wei Xu and Ling Huang and Armando Fox and David Patterson and Michael Jordan},
@@ -1148,6 +1209,17 @@ Terence Kelly and Julie Symons and Armando Fox},
   address =   {Berkeley, CA},
   month =     5}
 
+@techreport{Catanzaro:EECS-2010-23,
+    Author = {Catanzaro, Bryan and Kamil, Shoaib Ashraf and Lee, Yunsup and Asanović, Krste and Demmel, James and Keutzer, Kurt and Shalf, John and Yelick, Katherine A. and Fox, Armando},
+    Title = {SEJITS: Getting Productivity and Performance With Selective Embedded JIT Specialization},
+    Institution = {EECS Department, University of California, Berkeley},
+    Year = {2010},
+    Month = {3},
+    URL = {http://www2.eecs.berkeley.edu/Pubs/TechRpts/2010/EECS-2010-23.html},
+    Number = {UCB/EECS-2010-23},
+    Abstract = {Today’s “high productivity” programming languages such as Python lack the performance of harder-to-program “efficiency” languages (CUDA, Cilk, C with OpenMP) that can exploit extensive programmer knowledge of parallel hardware architectures.	We combine efficiency-language performance with productivity-language programmability using selective embedded just-in-time specialization (SEJITS). At runtime, we specialize (generate, compile, and execute efficiency-language source code for) an application-specific and platform-specific subset of a productivity language, largely invisibly to the application programmer. Because the specialization machinery is implemented in the productivity language itself, it is easy for efficiency programmers to incrementally add specializers for new domain abstractions, new hardware, or both. SEJITS has the potential to bridge productivity-layer research and efficiency-layer research, allowing domain experts to exploit different parallel hardware architectures with a fraction of the programmer time and effort usually required.}
+}                  
+
 @inproceedings{sejits-pmea09,
   author =       {Bryan Catanzaro and Shoaib Kamil and Yunsup Lee and Krste Asanovi\'{c} and James Demmel and Kurt Keutzer and John Shalf and Kathy Yelick and Armando Fox},
   title =        {{SEJITS}: Getting Productivity And Performance With
@@ -1157,7 +1229,32 @@ Selective Embedded {JIT} Specialization},
   address =   {Raleigh, NC},
   month =     10}
                   
+%% michael driscoll's MS thesis
+@techreport{Driscoll:EECS-2014-231,
+    Author = {Driscoll, Michael},
+    Editor = {Yelick, Katherine A. and Fox, Armando},
+    Title = {Subdivision Surface Evaluation as Sparse Matrix-Vector Multiplication},
+    Institution = {EECS Department, University of California, Berkeley},
+    Year = {2014},
+    Month = {12},
+    URL = {http://www2.eecs.berkeley.edu/Pubs/TechRpts/2014/EECS-2014-231.html},
+    Number = {UCB/EECS-2014-231},
+    Abstract = {We present an interpretation of subdivision surface evaluation in the language of linear algebra. Specifically, the vector of surface points can be computed by left-multiplying the vector of control points by a sparse subdivision matrix. This “matrix-driven” interpretation applies to any level of subdivision, holds for many common subdivision schemes (including Catmull-Clark and Loop), supports limit surface evaluation, allows semi-sharp creases, and complements feature-adaptive optimizations. It is primarily applicable to static meshes undergoing deformation (i.e. animation), in which case the subdivision matrix is invariant over time and the surface can be evaluated at each frame with a single sparse matrix-vector multiplication (SpMV). We describe techniques for building subdivision matrices on-the-fly using the recursive definition of the subdivision scheme and sparse matrix-matrix multiplication (SpMM) routines. The performance of our approach thus reduces to that of SpMV and SpMM, both of which have been studied extensively and are available in common packages for numerical linear algebra. We implemented our approach as an extension to Pixar’s OpenSubdiv library using routines from Intel’s Math Kernel Library and Nvidia’s CUSPARSE library to target multicore CPUs and GPUs, respectively. We present performance results from off-the-shelf routines and our own “SpMV-like” routines that achieve 1.7-4.8x better performance than existing techniques on both platforms.We conclude by describing two major limitations of matrix-driven evaluation, namely difficulty computing vertex normals and complications in the presence of hierarchical edits, and suggest workarounds for both.}
+}
+
                   
+
+%% richard xia's MS thesis                  
+@techreport{Xia:EECS-2012-227,
+    Author = {Xia, Richard and Elmas, Tayfun and Kamil, Shoaib Ashraf and Fox, Armando and Sen, Koushik},
+    Title = {Multi-level Debugging for Multi-stage, Parallelizing Compilers},
+    Institution = {EECS Department, University of California, Berkeley},
+    Year = {2012},
+    Month = {12},
+    URL = {http://www2.eecs.berkeley.edu/Pubs/TechRpts/2012/EECS-2012-227.html},
+    Number = {UCB/EECS-2012-227},
+    Abstract = {A multi-stage compilation framework transforms portions of programs written in a productivity-level language into an efficiency-level language, such as C, with explicit hardware-specific optimizations.  It is challenging for compiler programmers to debug errors in the compilation because they must perform complicated end-to-end reasoning, relating the programs across the multiple stages of compilation.  To simplify this debugging effort, we present multi-level debugging, a novel combination of error-checking algorithms in a multi-stage compilation environment.  Our method particularly aims to model and check sequential and parallel notions of nondeterminism and related bugs introduced by the compilation.  Using our method, the programmer can systematically eliminate potential sources of the bug in the compilation process and focus only on the real source.  We demonstrated on two real multi-stage compilers the effectiveness of multi-stage debugging in simplifying the diagnosis of manually-injected bugs as well as in an actual bug encountered during compiler development.}
+}                  
 
 @inproceedings{snowflake-hips,
   author =       {Nathan Zhang and Michael Driscoll and Charles Markley and Samuel Williams and Protonu Basu and Armando Fox and Katherin Yelick},
@@ -1196,6 +1293,28 @@ Selective Embedded {JIT} Specialization},
   address =   {San Diego, CA},
   month =     12}
 
+@techreport{Bodik:EECS-2008-127,
+    Author = {Bodik, Peter and Armbrust, Michael Paul and Canini, Kevin and Fox, Armando and Jordan, Michael and Patterson, David A.},
+    Title = {A Case For Adaptive Datacenters To Conserve Energy and Improve Reliability},
+    Institution = {EECS Department, University of California, Berkeley},
+    Year = 2008,
+    Month = {9},
+    URL = {http://www2.eecs.berkeley.edu/Pubs/TechRpts/2008/EECS-2008-127.html},
+    Number = {UCB/EECS-2008-127},
+    Abstract = {Although there is prior work on energy conservation in datacenters, we identify a new approach based on the synergy between virtual machines and statistical machine learning, and we observe that constrained energy conservation can improve hardware reliability. We give initial results on a cluster that reduces energy costs by a factor of 5, reduces integrated circuit failures by a factor of 1.6, and disk failures by a factor of 5. We propose research milestones to generalize our results and compare them with recent related work.}
+}
+
+@techreport{Armbrust:EECS-2009-28,
+    Author = {Armbrust, Michael and Fox, Armando and Griffith, Rean and Joseph, Anthony D. and Katz, Randy H. and Konwinski, Andrew and Lee, Gunho and Patterson, David A. and Rabkin, Ariel and Stoica, Ion and Zaharia, Matei},
+    Title = {Above the Clouds: A Berkeley View of Cloud Computing},
+    Institution = {EECS Department, University of California, Berkeley},
+    Year = 2009,
+    Month = {2},
+    URL = {http://www2.eecs.berkeley.edu/Pubs/TechRpts/2009/EECS-2009-28.html},
+    Number = {UCB/EECS-2009-28},
+    Abstract = {Provided certain obstacles are overcome, we believe Cloud Computing has the potential to transform a large part of the IT industry, making software even more attractive as a service and shaping the way IT hardware is designed and purchased.  Developers with innovative ideas for new interactive Internet services no longer require the large capital outlays in hardware to deploy their service or the human expense to operate it. They need not be concerned about over-provisioning for a service whose popularity does not meet their predictions, thus wasting costly resources, or under-provisioning for one that becomes wildly popular, thus missing potential customers and revenue. Moreover, companies with large batch-oriented tasks can get their results as quickly as their programs can scale, since using 1000 servers for one hour costs no more than using one server for 1000 hours. This elasticity of resources, without paying a premium for large scale, is unprecedented in the history of IT.  The economies of scale of very large-scale datacenters combined with  ``pay-as-you-go'' resource usage has heralded the rise of Cloud Computing. It is now attractive to deploy an innovative new Internet service on a third party's Internet Datacenter rather than your own infrastructure, and to gracefully scale its resources as it grows or declines in popularity and revenue. Expanding and shrinking daily in response to normal diurnal patterns could lower costs even further. Cloud Computing transfers the risks of over-provisioning or under-provisioning to the Cloud Computing provider, who mitigates that risk by statistical multiplexing over a much larger set of users and who offers relatively low prices due better utilization and from the economy of purchasing at a larger scale. We define terms, present an economic model that quantifies the key buy vs. pay-as-you-go decision, offer a spectrum to classify Cloud Computing providers, and give our view of the top 10 obstacles and opportunities to the growth of Cloud Computing.}
+}                  
+
 @article{abovetheclouds-cacm,
   title =       {Above the Clouds: A Berkeley View of Cloud Computing},
   author =        {Michael Armbrust and Armando Fox and Rean Griffith and Anthony D. Joseph and Randy Katz and Andy Konwinski and Gunho Lee and David Patterson and Ariel Rabkin and Ion Stoica and Matei Zaharia},
@@ -1229,7 +1348,7 @@ Selective Embedded {JIT} Specialization},
 
 @techreport{tr:rain,
   author =       {Aaron Beitch and Brandon Liu and Timothy Yung and Rean Griffith and Armando Fox and David A. Patterson},
-  title =        {Rain: A Workload Generation Toolkit for Cloud Computing Applications},
+  title =        {{RAIN}: A Workload Generation Toolkit for Cloud Computing Applications},
   institution =  {University of California, Berkeley},
   year =         2010,
   number =    {{EECS}-2010-14},
@@ -1261,7 +1380,7 @@ url = {http://www.eecs.berkeley.edu/Pubs/TechRpts/2012/EECS-2012-61.html}
 @techreport{Spillinger:EECS-2015-29,
     Author = {Spillinger, Omer and Eliahu, David and Fox, Armando and Demmel, James},
     Title = {Matrix Multiplication Algorithm Selection with Support Vector Machines},
-    School = {EECS Department, University of California, Berkeley},
+    Institution = {EECS Department, University of California, Berkeley},
     Year = {2015},
     Month = 5,
     URL = {http://www.eecs.berkeley.edu/Pubs/TechRpts/2015/EECS-2015-29.html},
@@ -1436,7 +1555,26 @@ year = 2012
   month = 12,
   volume = 56
 }
-                  
+
+@techreport{Armendariz:EECS-2014-76,
+    Author = {Armendariz, Daniel},
+    Editor = {Garcia, Dan and Fox, Armando},
+    Title = {OCTAL: The Online Course Tool for Adaptive Learning},
+    Institution = {EECS Department, University of California, Berkeley},
+    Year = {2014},
+    Month = {5},
+    URL = {http://www2.eecs.berkeley.edu/Pubs/TechRpts/2014/EECS-2014-76.html},
+    Number = {UCB/EECS-2014-76}
+    }
+@techreport{McKinsey:EECS-2015-139,
+    Author = {McKinsey, Jonathan and Fox, Armando and Garcia, Dan},
+    Title = {Remote Pair Programming in a Visual Programming Language},
+    institution = {EECS Department, University of California, Berkeley},
+    Year = {2015},
+    Month = {5},
+    URL = {http://www2.eecs.berkeley.edu/Pubs/TechRpts/2015/EECS-2015-139.html},
+    Number = {UCB/EECS-2015-139}
+}
 
 @inproceedings{forum-cscw,
   author =       {Derrick Coetzee and Armando Fox and Marti A. Hearst and Bjoern Hartmann},
@@ -1565,7 +1703,16 @@ year = 2012
   month = 9,
   address =   {Toledo, Spain}}
 
-
+@report{RoyChoudhury:EECS-2016-40,
+    Author = {Roy Choudhury, Rohan and Yin, Hezheng and Moghadam, Joseph and Chen, Antares and Fox, Armando},
+    Title = {AutoStyle: Scale-driven Hint Generation for Coding Style},
+    Institution = {EECS Department, University of California, Berkeley},
+    Year = {2016},
+    Month = {5},
+    URL = {http://www2.eecs.berkeley.edu/Pubs/TechRpts/2016/EECS-2016-40.html},
+    Number = {UCB/EECS-2016-40},
+    Abstract = {While the use of autograders for code correctness is widespread, less effort has focused on automating feedback for good programming style: the tasteful use of language features and idioms to produce code that is not only correct, but also concise, elegant, and revealing of design intent. We present a system that can provide real-time actionable code style feedback to students in large introductory computer science classes. We demonstrate that in a randomized controlled trial, 70% of students using our system achieved the best style solution to a coding problem in less than an hour, while only 13% of students in the control group achieved the same. Students using our system also showed a statistically-significant greater improvement in code style than students in the control group. We also present experiments to demonstrate the efficacy and relevance of each of the different types of hints generated by our system.}
+}
 
 @inproceedings{autostyle-lwmoocs16,
   author =       {Antares Chen and Eliane Wiese and HeZheng Yin and Rohan Choudhury and Armando Fox},
@@ -1606,7 +1753,7 @@ year = 2012
   author =       {Eliane Wiese and Anna Rafferty and Armando Fox},
   title =        {Linking Code Readability, Structure, and Comprehension Among Novices: It's Complicated},
   booktitle = {2019 International Conference on Software Engineering ({ICSE} 2019), Software Engineering, Education, and Training Track ({SEET})},
-  url = {https://www.overleaf.com/project/5c476fe7bbebf743f93fedf2},                   
+  overleaf = {https://www.overleaf.com/project/5c476fe7bbebf743f93fedf2},                   
   year =      2019}
 
 
@@ -1624,7 +1771,18 @@ year = 2012
                   
 %% Teamscope
 
-                  
+%% An's MS thesis
+@techreport{Ju:EECS-2020-39,
+    Author = {Ju, An and Hemani, Adnan and Zeitsoff, Joshua and Dimitriadis, Yannis and Fox, Armando},
+    Editor = {Hug, Joshua},
+    Title = {Building XP process metrics for project-based software engineering courses},
+    Institution = {EECS Department, University of California, Berkeley},
+    Year = 2020,
+    Month = {5},
+    URL = {http://www2.eecs.berkeley.edu/Pubs/TechRpts/2020/EECS-2020-39.html},
+    Number = {UCB/EECS-2020-39},
+    Abstract = {Project-based courses are widely used in software engineering curricula. In this report, we examine two issues related to project-based software engineering courses: 1) what processes should we include in the course, and 2) in order to achieve formative assessments, how can we build process metrics. In the first part, we combine a field study on professional Agile (eXtreme Programming, XP) teams and an established team process taxonomy to "proactively" select team processes to include in a project-based software engineering course.  We choose processes that are 1) considered essential by professionals, and 2) complete with respect to coverage of the taxonomy's main categories. A case study shows that the augmented course design improves learning outcomes. In the second part, we establish the importance of measuring processes in project-based software engineering courses and present metrics mined from software development tools for monitoring and observing processes to facilitate teaching. A case study confirms that teams with better conformance to software development processes achieve better outcomes. Methods presented in this report can be used to improve software engineering courses. Some future studies are discussed in this report, envisioning a systematic method for improving and automating software engineering courses.}
+}                  
 
 @inproceedings{teamscope-eagle-demo,
   author =       {Alejandro Guerrero and Rafael Fresno and An Ju and Armando Fox and Pablo Fern\'andez and  Carlos Muller and Antonio Ruiz-Cort\'es},
@@ -1706,7 +1864,9 @@ widespread emulation of this successful strategy.}
   title =        {Usage of hints on coding-based summative assessments},
   booktitle = {{50th ACM Technical Symposium on Computer Science Education (SIGCSE 2019)}},
   year =      2019,
-  address =   {Minneapolis, MN}}
+  overleaf = {https://www.overleaf.com/project/5bffa95a73e5a85a63acc3f0},
+  address =   {Minneapolis, MN}
+  }
 
 @inproceedings{coding-exams-iticse2018,
   author =       {An Ju and Ben Mehne and Andrew Halle and Armando Fox},
