@@ -1,10 +1,21 @@
 TEX = pdflatex
 BIB = bibtex8 --wolfgang
+HT = make4ht
 
 BIBFILE = fox.bib
 CATEGORIES = nonref
 
 all: cite-by-section.pdf
+
+cite-by-section.html: cite-by-section.tex $(BIBFILE)
+	@$(HT) cite-by-section
+	@$(BIB) cite-by-section
+	@$(HT) cite-by-section
+	@sed 1,3d $@ | sed '1s/^/<!DOCTYPE html>/' > /tmp/cite-by-section.html
+	mv /tmp/cite-by-section.html .
+
+targ:
+	@sed "1,3c\\\n<!DOCTYPE html>" cite-by-section.html | more
 
 clean:
 	rm -f *.{aux,pdf,dvi,log,out,bbl,blg,bcf,run.xml}
