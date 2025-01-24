@@ -1,0 +1,45 @@
+\documentclass[10pt]{article}
+\usepackage{fullpage}[0.75in] % remove "empty" to include page numbers
+\usepackage[maxbibnames=99,sorting=ynt,defernumbers=true,backend=bibtex8]{biblatex}
+\addbibresource{a4a.bib}
+
+%\input{custom_bib_categories}
+
+\begin{document}
+\pagestyle{empty}\thispagestyle{empty}
+
+\begin{center}{\huge ``A's For All'' and Mastery Learning Complete Publications List}
+\end{center}
+\vspace{0.5in}
+
+
+\nocite{*}
+
+\printbibliography
+
+%% % the berkeley merit review format requires these categories:
+
+%% % refereed/archival Journal @article entries.  make sure your bibtex entries for these
+%% % do NOT include the keyword "nonref" in the "keywords" field
+%% \printbibliography[type=article,notkeyword=nonref,title={Refereed Journal Articles}]
+
+%% % refereed conference proceedings/papers: all @inproceedings
+%% \printbibliography[type=inproceedings,title={Refereed Conference Proceedings}]
+
+%% % nonrefereed conference proceedings/papers (invited, etc).
+%% % this will pull in ANY entry type that includes "keywords={nonref}"
+%% \printbibliography[keyword=nonref,title={Nonrefereed Conference Proceedings}]
+
+%% % tech reports: all @techreport entries.  Note that @techreport is considered a legacy
+%% % type in biblatex, and is an alias for @report, so we use that here.
+%% \printbibliography[type=report,title={Technical Reports}]
+
+%% % books/editede collections and book chapters.  add "keywords={booksandbookchapters}" to all
+%% % appropriate bib entries including @incollection, @book, @proceedings, etc.
+%% \printbibliography[keyword=booksandbookchapters,title={Books/book chapters}]
+
+%% % patents: use the @patent entry type recognized by biblatex.
+%% \printbibliography[type=patent,title={Patents}]
+
+
+\end{document}

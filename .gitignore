@@ -1,2 +1,2 @@
-*.{blg,bst,bbl,log,aux,out,dvi}
+*.{blg,bst,bbl,log,aux,out,dvi,idv,tmp,4ct,4tc,xref}
 cite.pdf
